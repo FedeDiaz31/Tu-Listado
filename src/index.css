@@ -1,0 +1,465 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.hack-title {
+  text-align: center;
+  color: #ffc300;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="radio"]:checked + label::after {
+  content: "✔";
+  font-family: "lucida grande";
+  color: #1164b1;
+  font-size: 20px;
+  line-height: 25px;
+  margin-left: 10px;
+}
+input[type="radio"] {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 10px;
+  border-color: #2995fa;
+}
+
+.close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(180, 178, 178);
+  color: black;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.create-button {
+  width: 100%;
+  margin: 20px;
+}
+
+/* Line List Style */
+.form {
+  margin: 0 auto;
+}
+
+.List {
+  width: 700px;
+  background-color: #f0f1f8;
+  border: 1px solid #dedede;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.introduction {
+  width: 700px;
+  background-color: #f0f1f8;
+  border: 1px solid #dedede;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.List:hover {
+  border: 5px solid skyblue;
+}
+
+.list-name {
+  width: 200px;
+}
+
+.check-data-list,
+.date-list {
+  margin: 0 10px;
+}
+
+.product-line {
+  background-color: white;
+  border-radius: 15px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  height: 45px;
+  z-index: 5;
+}
+.product-line:hover {
+  border: 5px solid skyblue;
+}
+
+.data-elements {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-left: 20px;
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* End Line List Style */
+
+/* Line Buttons Style */
+
+.show-button {
+  background-color: rgba(224, 224, 224, 0.87);
+  border-bottom-left-radius: 15px;
+}
+
+.delete-button {
+  background-color: rgb(245, 85, 85);
+  border-bottom-right-radius: 15px;
+}
+
+.list-button {
+  margin: 0 0 0 20px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* End Line Buttons Style */
+
+/* Modal Style */
+
+.Modal {
+  border: 1px solid rgb(231, 231, 231);
+  padding: 20px;
+  width: 400px;
+  position: fixed;
+  margin: auto;
+  z-index: 10;
+}
+
+.input-createList {
+  display: flex;
+  margin-left: 5px;
+  align-items: flex-end;
+}
+
+.modal-show {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  top: 33%;
+  left: 33%;
+  /* right: auto; */
+  border: solid 3px rgb(48, 127, 201);
+  width: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 10;
+  width: 560px;
+  background-color: white;
+  box-shadow: 2px 4px 8px 4px rgb(105, 163, 211);
+}
+
+.addPrice-modal {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  top: 45%;
+  left: 28%;
+  border: solid 3px rgb(29, 124, 10);
+  width: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 10;
+  width: 560px;
+  background-color: white;
+  box-shadow: 2px 4px 8px 4px rgb(35, 100, 38);
+}
+
+.input-addPrice {
+  margin: 10px auto 0 auto;
+  width: 500px;
+}
+
+.modal-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* End Modal Style */
+
+/* Product List Component */
+
+.through-text {
+  text-decoration: line-through;
+}
+
+.addProduct {
+  background-color: #2995fa;
+  width: 135px;
+}
+.delete-list {
+  color: white;
+  background: #fa5959;
+  width: 135px;
+}
+
+.check-input {
+  margin-top: 1rem;
+  width: 400px;
+}
+
+.trash-icon:hover {
+  fill: red;
+}
+
+.data-product-quant {
+  width: 40px;
+}
+
+.data-product-price {
+  width: 80px;
+}
+
+.editShopProduct {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+
+  top: 17px;
+  right: 30px;
+  z-index: 2;
+
+  border: 4px solid rgba(248, 203, 4, 0.795);
+  background-color: #fafdce;
+  color: #f0f1f8;
+  height: 43px;
+  width: 180px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.btn-closeEditModal {
+  border-radius: 50%;
+  border-color: #b5b6ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 13px;
+  right: 48px;
+  z-index: 5;
+}
+
+/* End Product List Component */
+
+/* Response */
+@media (max-width: 991px) {
+  .addProduct {
+    width: 138px;
+  }
+  .modal-show {
+    left: 20%;
+    right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-show {
+    left: auto;
+    right: auto;
+  }
+  .addProduct {
+    width: 148px;
+  }
+  .introduction {
+    width: 650px;
+  }
+  .List {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .data-elements {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+  .list-name {
+    width: 150px;
+  }
+  .list-data {
+    width: 400px;
+  }
+  .list-buttons {
+    width: 100px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 670px) {
+  .modal-show {
+    width: 570px;
+    font-size: 0.8rem;
+  }
+  h4 {
+    font-size: medium;
+  }
+  .introduction {
+    width: 500px;
+  }
+  .List {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .list-name {
+    margin: 0;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  .data-elements {
+    font-size: 0.72rem;
+    align-items: center;
+  }
+  .list-data {
+    align-items: center;
+    width: 350px;
+  }
+  .status-list {
+    margin-bottom: 0;
+  }
+  .list-buttons {
+    width: 80px;
+    margin-left: 40px;
+  }
+  .show-button,
+  .delete-button,
+  .list-button {
+    width: 40px;
+    height: 25px;
+  }
+
+  .btn-2 {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .delete-list {
+    width: 125px;
+  }
+  .hack-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 530px) {
+  h4 {
+    font-size: medium;
+  }
+  .modal-show {
+    font-size: 0.8rem;
+    width: 680px;
+  }
+  .introduction {
+    width: 350px;
+  }
+  .List {
+    width: 700px;
+  }
+  .list-name {
+    margin: 0;
+    width: 100px;
+    margin-right: 100px;
+  }
+
+  .data-elements {
+    width: 400px;
+    margin-left: 50px;
+  }
+  .list-data {
+    width: 500px;
+  }
+  .list-buttons {
+    width: 63px;
+  }
+  .show-button,
+  .delete-button,
+  .list-button {
+    width: 35px;
+    height: 20px;
+    margin: 0 0 0 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .introduction {
+    width: 400px;
+  }
+
+  .modal-show {
+    width: 570px;
+  }
+  .List {
+    width: 600px;
+  }
+  .list-name {
+    margin: 0;
+    width: 300px;
+    font-size: revert;
+  }
+
+  h5 {
+    font-size: 0.8rem;
+  }
+  .data-elements {
+    width: 300px;
+  }
+  .list-data {
+    width: 450px;
+  }
+  .list-buttons {
+    width: 63px;
+  }
+  .show-button,
+  .delete-button,
+  .list-button {
+    width: 35px;
+    height: 20px;
+    margin: 0 0 0 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  .modal-show {
+    font-size: small;
+  }
+  h4 {
+    font-size: small;
+  }
+  .introduction {
+    font-size: 0.8rem;
+    width: 330px;
+  }
+}
