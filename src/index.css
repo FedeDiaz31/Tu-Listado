@@ -81,7 +81,10 @@ input[type="radio"] {
 }
 
 .check-data-list,
-.date-list {
+.date-list,
+.status-list {
+  display: flex;
+  align-items: center;
   margin: 0 10px;
 }
 
@@ -281,9 +284,6 @@ input[type="radio"] {
 }
 
 @media (max-width: 767px) {
-  body {
-    width: 767px;
-  }
   .modal-show {
     left: auto;
     right: auto;
@@ -298,13 +298,18 @@ input[type="radio"] {
     width: 600px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .data-elements {
+    margin-left: 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 300px;
   }
   .list-name {
+    display: flex;
+    align-items: center;
     width: 150px;
   }
   .list-data {
@@ -318,7 +323,7 @@ input[type="radio"] {
 
 @media (max-width: 670px) {
   .modal-show {
-    width: 570px;
+    width: 530px;
     font-size: 0.8rem;
   }
   h4 {
@@ -328,13 +333,15 @@ input[type="radio"] {
     width: 500px;
   }
   .List {
-    width: 600px;
+    width: 530px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .list-name {
     margin: 0;
+    padding-left: 10px;
+    width: 250px;
   }
   h5 {
     font-size: 1rem;
@@ -377,46 +384,7 @@ input[type="radio"] {
   }
 }
 
-@media (max-width: 530px) {
-  h4 {
-    font-size: medium;
-  }
-  .modal-show {
-    font-size: 0.8rem;
-    width: 680px;
-  }
-  .introduction {
-    width: 350px;
-  }
-  .List {
-    width: 700px;
-  }
-  .list-name {
-    margin: 0;
-    width: 100px;
-    margin-right: 100px;
-  }
-
-  .data-elements {
-    width: 400px;
-    margin-left: 50px;
-  }
-  .list-data {
-    width: 500px;
-  }
-  .list-buttons {
-    width: 63px;
-  }
-  .show-button,
-  .delete-button,
-  .list-button {
-    width: 35px;
-    height: 20px;
-    margin: 0 0 0 5px;
-  }
-}
-
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .introduction {
     width: 400px;
   }
@@ -425,25 +393,26 @@ input[type="radio"] {
     width: 570px;
   }
   .List {
-    width: 600px;
+    width: 420px;
+  }
+  .list-data {
+    width: 300px;
+    padding-left: 0;
   }
   .list-name {
     margin: 0;
-    width: 300px;
+    width: 110px;
     font-size: revert;
   }
 
-  h5 {
-    font-size: 0.8rem;
-  }
   .data-elements {
-    width: 300px;
+    width: 150px;
+    margin-left: 0;
   }
-  .list-data {
-    width: 450px;
-  }
+
   .list-buttons {
     width: 63px;
+    margin: 0;
   }
   .show-button,
   .delete-button,
@@ -452,11 +421,15 @@ input[type="radio"] {
     height: 20px;
     margin: 0 0 0 5px;
   }
+  h5 {
+    font-size: 0.8rem;
+  }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .modal-show {
     font-size: small;
+    width: 340px;
   }
   h4 {
     font-size: small;
@@ -465,9 +438,33 @@ input[type="radio"] {
     font-size: 0.8rem;
     width: 330px;
   }
+
+  .List {
+    display: flex;
+    width: 360px;
+  }
+  .list-data {
+    width: 200px;
+  }
+  .list-name {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+  .data-elements {
+    width: 90px;
+    margin-left: 0;
+  }
+  .date-list {
+    display: none;
+  }
+
+  fieldset {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-@media (max-width: 380px) {
+/* @media (max-width: 380px) {
   .List {
     display: flex;
     width: 360px;
@@ -493,4 +490,4 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
   }
-}
+} */
