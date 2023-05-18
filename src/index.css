@@ -270,7 +270,7 @@ input[type="radio"] {
 /* End Product List Component */
 
 /* Response */
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   .addProduct {
     width: 138px;
   }
@@ -280,7 +280,7 @@ input[type="radio"] {
   }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .modal-show {
     left: auto;
     right: auto;
@@ -313,7 +313,7 @@ input[type="radio"] {
   }
 }
 
-@media (max-width: 670px) {
+@media only screen and (max-width: 670px) {
   .modal-show {
     width: 570px;
     font-size: 0.8rem;
@@ -364,7 +364,7 @@ input[type="radio"] {
   }
 }
 
-@media (max-width: 575px) {
+@media only screen and (max-width: 575px) {
   .delete-list {
     width: 125px;
   }
@@ -374,7 +374,7 @@ input[type="radio"] {
   }
 }
 
-@media (max-width: 530px) {
+@media only screen and (max-width: 530px) {
   h4 {
     font-size: medium;
   }
@@ -413,7 +413,7 @@ input[type="radio"] {
   }
 }
 
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .introduction {
     width: 400px;
   }
@@ -451,7 +451,7 @@ input[type="radio"] {
   }
 }
 
-@media (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   .modal-show {
     font-size: small;
   }
