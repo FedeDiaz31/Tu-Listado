@@ -37,11 +37,11 @@ function CreateListModal({
             onChange={(event) => setInputValue(event.target.value)}
           />
         </div>
-        <fieldset className="d-flex align-items-center">
-          <div className="form-check ms-5">
+        <fieldset className="d-flex ">
+          <div className="form-check d-flex align-items-center justify-content-between">
             <input
               type="radio"
-              className="form-check-input ms-5 "
+              className="form-check-input  "
               value={"shopping-list"}
               name="select-type"
               id="shopping-list"
@@ -50,10 +50,10 @@ function CreateListModal({
             />
             <label htmlFor="shopping-list">Lista de compras</label>
           </div>
-          <div className="form-check me-2 ms-5">
+          <div className="form-check d-flex align-items-center ">
             <input
               type="radio"
-              className="form-check-input"
+              className="form-check-input ms-2"
               value={"simple-list"}
               name="select-type"
               onClick={(e) => setTypeList(e.target.value)}

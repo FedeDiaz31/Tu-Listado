@@ -38,10 +38,10 @@ function EditListModal({
         {/* ////////////////// */}
 
         <fieldset className="d-flex align-items-center">
-          <div className="form-check ms-5">
+          <div className="form-check d-flex align-items-center">
             <input
               type="radio"
-              className="form-check-input ms-5 "
+              className="form-check-input "
               value={"shopping-list"}
               name="select-type"
               id="shopping-list"
@@ -49,7 +49,7 @@ function EditListModal({
             />
             <label htmlFor="shopping-list">Lista de compras</label>
           </div>
-          <div className="form-check me-2 ms-5">
+          <div className="form-check d-flex align-items-center ms-2">
             <input
               type="radio"
               className="form-check-input"

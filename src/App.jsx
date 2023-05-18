@@ -7,12 +7,11 @@ import ProductList from "./ProductList";
 function App() {
   return (
     <div
-      className="container-fluid g-0 "
+      className="container g-0 "
       style={{
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
-        width: "800px",
       }}
     >
       <div className="d-flex justify-content-center align-items-baseline hack-title">
@@ -29,7 +28,7 @@ function App() {
         </svg>
         <h5 className="hack-title">
           {"   "}
-          Tu Listado ! en proceso
+          Tu Listado !
         </h5>
       </div>
       <Routes>

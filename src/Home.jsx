@@ -157,7 +157,7 @@ function Lists() {
                 <p className="date-list">{list.date}</p>
               </div>
             </div>
-            <div className="col-3 d-flex justify-content-end list-buttons">
+            <div className="col-3  d-flex justify-content-end list-buttons">
               <button
                 className="btn btn-light show-button list-button"
                 onClick={() => navigate(`/lista/${list.id}`)}
