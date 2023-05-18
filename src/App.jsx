@@ -29,7 +29,7 @@ function App() {
         </svg>
         <h5 className="hack-title">
           {"   "}
-          Tu Listado !
+          Tu Listado ! en proceso
         </h5>
       </div>
       <Routes>
