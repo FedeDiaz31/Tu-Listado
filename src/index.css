@@ -204,6 +204,19 @@ input[type="radio"] {
 
 /* Product List Component */
 
+.main-cont {
+  width: 800px;
+}
+
+.quant-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: end;
+  margin-right: 10px;
+}
+
 .through-text {
   text-decoration: line-through;
 }
@@ -257,7 +270,9 @@ input[type="radio"] {
 
 .btn-closeEditModal {
   border-radius: 50%;
-  border-color: #b5b6ab;
+  border-color: #469dee;
+  background-color: #469dee;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,6 +283,16 @@ input[type="radio"] {
   top: 13px;
   right: 48px;
   z-index: 5;
+}
+
+.quant {
+  margin-right: 3px;
+}
+.price {
+  margin-right: 15px;
+}
+.cash-icon {
+  margin-left: 10px;
 }
 
 /* End Product List Component */
@@ -424,9 +449,126 @@ input[type="radio"] {
   h5 {
     font-size: 0.8rem;
   }
-}
 
+  /* /////shopp Product */
+  .addProduct,
+  .delete-list {
+    margin-right: 10px;
+  }
+
+  .main-cont {
+    width: 500px;
+  }
+
+  .product-line {
+    width: 380px;
+    font-size: 1.1rem;
+  }
+  .quant-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+    align-items: end;
+    margin-right: 10px;
+  }
+  h3 {
+    font-size: 1, 5rem;
+  }
+
+  .width-p {
+    font-size: 1rem;
+  }
+
+  .edit-icon {
+    width: 25px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .editShopProduct {
+    display: flex;
+    justify-content: end;
+    left: -8px;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  .btn-closeEditModal {
+    left: -25px;
+    top: 8px;
+  }
+
+  @media (max-width: 500px) {
+    .main-cont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 450px;
+    }
+
+    .product-line {
+      margin-right: auto;
+      width: 340px;
+      font-size: 0.8rem;
+    }
+    .form-control {
+      width: 100%;
+    }
+    .addProduct {
+      width: 100%;
+    }
+
+    .data-product {
+      display: flex;
+      flex-direction: column;
+    }
+    .quant-price {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      align-items: end;
+    }
+
+    .data-product-price {
+      width: 120px;
+    }
+    .data-product-quant {
+      width: 80px;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    .edit-icon {
+      width: 18px;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+    .editShopProduct {
+      display: flex;
+      justify-content: end;
+
+      left: -8px;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  .btn-closeEditModal {
+    left: -25px;
+    top: 8px;
+  }
+  .hack-title {
+    margin-top: 15px;
+  }
+}
 @media (max-width: 450px) {
+  .hack-title {
+    margin-top: 15px;
+  }
+
   .modal-show {
     font-size: small;
     width: 340px;
@@ -462,32 +604,76 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
   }
-}
-
-/* @media (max-width: 380px) {
-  .List {
+  /* /////shopp Product */
+  .main-cont {
     display: flex;
-    width: 360px;
+    flex-direction: column;
+    justify-content: center;
+    width: 420px;
   }
-  .list-data {
-    width: 200px;
-  }
-  .list-name {
-    width: 100px;
+
+  .product-line {
+    margin-right: auto;
+    width: 300px;
     font-size: 0.8rem;
   }
-  .data-elements {
-    width: 90px;
-    margin-left: 0;
+  .form-control {
+    width: 100%;
   }
-  .date-list {
+  .addProduct {
+    width: 100%;
+  }
+
+  .cash-icon {
+    margin-left: 10px;
+  }
+  .data-product {
+    display: flex;
+    flex-direction: column;
+  }
+  .quant-price {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    align-items: end;
+  }
+
+  .data-product-price {
+    width: 120px;
+  }
+  .data-product-quant {
+    width: 80px;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .edit-icon {
+    width: 18px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .editShopProduct {
+    display: flex;
+    justify-content: end;
+
+    left: -8px;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+.btn-closeEditModal {
+  left: -25px;
+  top: 8px;
+}
+
+@media (max-width: 420px) {
+  .editShopProduct {
     display: none;
   }
-  .modal-show {
-    width: 340px;
+  .btn-closeEditModal {
+    display: none;
   }
-  fieldset {
-    display: flex;
-    justify-content: center;
-  }
-} */
+}

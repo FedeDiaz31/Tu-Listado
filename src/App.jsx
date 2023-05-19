@@ -7,7 +7,7 @@ import ProductList from "./ProductList";
 function App() {
   return (
     <div
-      className="container g-0 "
+      className="container  "
       style={{
         display: "flex",
         justifyContent: "center",

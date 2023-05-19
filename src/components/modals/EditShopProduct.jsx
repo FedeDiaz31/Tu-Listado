@@ -17,7 +17,7 @@ function EditShopProduct({ product, handleShowEditPriceModal }) {
             width="24"
             height="24"
             fill="green"
-            class="bi bi-cash-coin mt-1"
+            class="bi bi-cash-coin mt-1 "
             viewBox="0 0 16 16"
           >
             <path
@@ -40,7 +40,7 @@ function EditShopProduct({ product, handleShowEditPriceModal }) {
             width="24"
             height="24"
             fill="#0576C4"
-            class="bi bi-plus-circle-fill"
+            class="bi bi-plus-circle-fill "
             viewBox="0 0 16 16"
           >
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
@@ -48,12 +48,13 @@ function EditShopProduct({ product, handleShowEditPriceModal }) {
         </div>
         <div className="ms-1">
           <svg
+            className="edit-icon"
             role="button"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             fill="#F64B4B"
-            class="bi bi-dash-circle-fill"
+            class="bi bi-dash-circle-fill "
             viewBox="0 0 16 16"
           >
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
