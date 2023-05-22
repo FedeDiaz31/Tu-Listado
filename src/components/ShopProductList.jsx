@@ -113,10 +113,7 @@ function ShopProductList({ list, products }) {
               onChange={(event) => setInputValue(event.target.value)}
             />
             <div className="quant-price">
-              <label
-                htmlFor="quantity"
-                className="text-light fw-bold ms-3 me-2"
-              >
+              <label htmlFor="quantity" className="text-light fw-bold me-2">
                 Cantidad
               </label>
               <input

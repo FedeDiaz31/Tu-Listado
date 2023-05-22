@@ -670,10 +670,33 @@ input[type="radio"] {
 }
 
 @media (max-width: 420px) {
+  .main-cont {
+    width: 360px;
+    background-color: #2995fa;
+  }
   .editShopProduct {
     display: none;
   }
   .btn-closeEditModal {
     display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .main-cont {
+    width: 330px;
+    background-color: #fa5959;
+  }
+  .quant-price {
+    margin-left: auto;
+  }
+  .data-product-quant {
+    width: 50px;
+  }
+  .data-product-price {
+    width: 100px;
+  }
+  .addProduct {
+    margin: 0;
   }
 }
