@@ -42,15 +42,15 @@ function SimpleProductList({ list, products }) {
 
   return (
     <form onSubmit={(event) => event.preventDefault()}>
-      <div className="container" style={{ width: "800px" }}>
-        <div className="d-flex justify-content-between">
+      <div className="container">
+        <div className="d-flex  justify-content-between">
           <p className="fw-bold text-light">Listado simple</p>
           <p className="text-light">{list.date}</p>
         </div>
         <div className="d-flex justify-content-between mb-2 text-light">
           <h3 style={{ color: "#FFC300" }}>{list.name}</h3>
         </div>
-        <div className="d-flex">
+        <div className="data-product">
           <input
             type="text"
             placeholder="Agregar un nuevo item"
@@ -58,12 +58,14 @@ function SimpleProductList({ list, products }) {
             value={inputValue}
             onChange={(event) => setInputValue(event.target.value)}
           />
-          <button
-            className="addProduct btn btn-primary ms-2"
-            onClick={handleAddProduct}
-          >
-            Agregar
-          </button>
+          <div className="d-flex flex-row-reverse">
+            <button
+              className="addProduct btn btn-primary mt-2"
+              onClick={handleAddProduct}
+            >
+              Agregar
+            </button>
+          </div>
         </div>
         <div className="mt-5">
           {products.map((product) => (
@@ -105,7 +107,7 @@ function SimpleProductList({ list, products }) {
             </div>
           ))}
         </div>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between align-items-end">
           <Link style={{ color: "#ffc300", fontWeight: "bold" }} to="/">
             Volver
           </Link>
