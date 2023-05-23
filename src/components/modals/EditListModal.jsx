@@ -37,7 +37,7 @@ function EditListModal({
         </div>
         {/* ////////////////// */}
 
-        <fieldset className="d-flex align-items-center">
+        <fieldset className="d-flex align-items-center justify-content-around">
           <div className="form-check d-flex align-items-center">
             <input
               type="radio"

@@ -37,7 +37,7 @@ function CreateListModal({
             onChange={(event) => setInputValue(event.target.value)}
           />
         </div>
-        <fieldset className="d-flex ">
+        <fieldset className="d-flex justify-content-around ">
           <div className="form-check d-flex align-items-center justify-content-between">
             <input
               type="radio"

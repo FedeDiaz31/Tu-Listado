@@ -43,8 +43,8 @@ input[type="radio"] {
   right: 0;
 }
 .create-button {
-  width: 100%;
-  margin: 20px;
+  width: 98%;
+  margin-bottom: 15px;
 }
 
 /* Line List Style */
@@ -192,7 +192,7 @@ input[type="radio"] {
 
 .input-addPrice {
   margin: 10px auto 0 auto;
-  width: 500px;
+  width: 97%;
 }
 
 .modal-btn {
@@ -305,17 +305,14 @@ input[type="radio"] {
   .addProduct {
     width: 138px;
   }
-  .modal-show {
-    left: 20%;
+  .modal-show,
+  .addPrice-modal {
+    left: auto;
     right: auto;
   }
 }
 
 @media (max-width: 767px) {
-  .modal-show {
-    left: auto;
-    right: auto;
-  }
   .addProduct {
     width: 148px;
   }
@@ -350,8 +347,9 @@ input[type="radio"] {
 }
 
 @media (max-width: 670px) {
-  .modal-show {
-    width: 530px;
+  .modal-show,
+  .addPrice-modal {
+    width: 500px;
     font-size: 0.8rem;
   }
   h4 {
@@ -471,8 +469,12 @@ input[type="radio"] {
   }
 
   .modal-show {
-    width: 570px;
+    width: 420px;
   }
+  .addPrice-modal {
+    width: 475px;
+  }
+
   .List {
     width: 420px;
   }
@@ -593,6 +595,13 @@ input[type="radio"] {
     p {
       font-size: 0.9rem;
     }
+    .modal-show {
+      width: 390px;
+    }
+
+    .addPrice-modal {
+      width: 425px;
+    }
   }
 }
 
@@ -600,6 +609,10 @@ input[type="radio"] {
   .modal-show {
     font-size: small;
     width: 340px;
+  }
+
+  .addPrice-modal {
+    width: 395px;
   }
   h4 {
     font-size: small;
@@ -649,11 +662,18 @@ input[type="radio"] {
   .main-cont {
     width: 360px;
   }
+  .addPrice-modal {
+    width: 335px;
+  }
 }
 
 @media (max-width: 380px) {
   .main-cont {
     width: 330px;
+  }
+
+  .addPrice-modal {
+    width: 305px;
   }
 
   .data-product-quant {
